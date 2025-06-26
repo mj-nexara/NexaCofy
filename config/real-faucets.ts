@@ -1,0 +1,67 @@
+// Real cryptocurrency faucets that actually pay
+export const REAL_FAUCETS = {
+  bitcoin: {
+    name: "FreeBitco.in",
+    url: "https://freebitco.in",
+    apiEndpoint: "https://freebitco.in/api/v1/claim",
+    paymentProof: "Pays since 2013",
+    minPayout: "0.00030000 BTC",
+    claimAmount: "0.00000034 - 0.00003400 BTC",
+    cooldown: "1 hour",
+    registrationRequired: true,
+    apiKeyRequired: true,
+    realMoney: true,
+  },
+
+  ethereum: {
+    name: "Free-Ethereum.io",
+    url: "https://free-ethereum.io",
+    apiEndpoint: "https://free-ethereum.io/api/claim",
+    paymentProof: "Active since 2017",
+    minPayout: "0.002 ETH",
+    claimAmount: "0.000001 - 0.000010 ETH",
+    cooldown: "24 hours",
+    registrationRequired: true,
+    apiKeyRequired: false,
+    realMoney: true,
+  },
+
+  litecoin: {
+    name: "FreeLitecoin.com",
+    url: "https://freelitecoin.com",
+    apiEndpoint: "https://freelitecoin.com/api/claim",
+    paymentProof: "Trusted faucet",
+    minPayout: "0.002 LTC",
+    claimAmount: "0.000001 - 0.000100 LTC",
+    cooldown: "1 hour",
+    registrationRequired: true,
+    apiKeyRequired: true,
+    realMoney: true,
+  },
+
+  dogecoin: {
+    name: "FreeDoge.co.in",
+    url: "https://freedoge.co.in",
+    apiEndpoint: "https://freedoge.co.in/api/claim",
+    paymentProof: "Pays real DOGE",
+    minPayout: "5 DOGE",
+    claimAmount: "0.1 - 10 DOGE",
+    cooldown: "1 hour",
+    registrationRequired: true,
+    apiKeyRequired: true,
+    realMoney: true,
+  },
+
+  tron: {
+    name: "FreeTron.io",
+    url: "https://freetron.io",
+    apiEndpoint: "https://freetron.io/api/claim",
+    paymentProof: "Real TRX payments",
+    minPayout: "1 TRX",
+    claimAmount: "0.001 - 0.1 TRX",
+    cooldown: "24 hours",
+    registrationRequired: true,
+    apiKeyRequired: false,
+    realMoney: true,
+  },
+}
