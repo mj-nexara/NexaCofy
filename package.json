@@ -13,7 +13,7 @@
     "gateway"
   ],
   "scripts": {
-    "build": "npm run build:shared && npm run build:services && npm run build:gateway",
+    "build": "pnpm -r run build",
     "build:gateway": "cd gateway && npm run build",
     "build:services": "concurrently \"cd services/arbitrage-engine && npm run build\" \"cd services/freelance-hub && npm run build\" \"cd services/flash-loans && npm run build\" \"cd services/donation-platform && npm run build\"",
     "build:shared": "cd shared/ui-components && npm run build && cd ../database && npm run build",
